@@ -1,0 +1,228 @@
+/* Big tablet to 1200px */
+@media only screen and (max-width : 1200px){
+    
+    /* -----------------------REUSABLE COMPONENT------------------------- */
+    h2{
+        letter-spacing: 1.5px;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    .btn{
+        font-size: 1.3rem;
+        font-weight: 900;
+
+        width: 200px;
+
+        padding:15px;
+        margin-right: 25px;
+
+        border-radius: 10px;
+    }
+    .btn:hover,
+    .btn:active{
+        font-size: 1.3rem;
+    }
+    section{
+        padding: 50px 0px;
+    }
+
+/* ------------------------------------------------------------------ */
+    
+
+    .slogan__heading{
+        font-size: 3rem;
+    }
+
+
+    .about__picture-title{
+        font-size: 1.2rem;
+    
+        transform: translate(-38%,100%);
+    }
+    .about__picture:hover .about__picture-title,
+    .about__picture:active .about__picture-title{
+        transform: translate(-38%,-50%);
+        opacity: 1;
+    }
+
+
+    .product__detail{
+        width: 70%;
+    }
+
+    .product__detail--price{
+        font-size: 2.8rem;
+        font-weight:100;
+        text-align: center;
+    }
+    .product__detail--price span{
+        font-size: 80%;
+    }
+    .product__detail ul li{    
+        font-size: 1rem;
+        font-weight: 50;
+
+        padding-left: 27px;
+        margin-bottom: 10px;
+    }
+    .product__detail--icon{
+        font-size: 1.5rem;
+    }
+    .product__detail--btn{
+        margin:20px 0px 0px 27px;
+        
+        box-shadow: 5px 4px 3px 2px rgb(116, 117, 117);
+    }
+    .contact__form{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,-50%);
+    }
+}
+
+
+/* Small tablet to big tablet from 768px to 1023px */
+@media only screen and (max-width: 1023px){
+    /* -----------------------REUSABLE COMPONENT------------------------- */
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1.5px;
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin:0 auto;
+    }
+    h3{
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+    .btn{
+        font-size: 1.1rem;
+        font-weight: 900;
+
+        width: 170px;
+
+        padding:12px;
+        margin-right: 10px;
+
+        border-radius: 10px;
+    }
+    .btn:hover,
+    .btn:active{
+        font-size: 1.3rem;
+    }
+    section{
+        padding: 50px 0px;
+    }
+
+    /* ------------------------------------------------------------------ */
+    
+
+    .slogan__heading{
+        font-size: 2rem;
+        line-height: 300%;
+    }
+
+
+    /* ---------------------------About---------------------------------- */
+    .about{
+        /* margin: 30px 0px; */
+        margin: 0 auto;
+        background: white;
+    }
+
+    .about__picture{
+        margin-bottom: 40px;
+    }
+
+    .about__picture-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%,100%);
+        opacity: 0;
+        transition: all 0.5s;
+
+        font-size: 1.2rem;
+        color: whitesmoke;
+    }
+    .about__picture:hover .about__picture-title,
+    .about__picture:active .about__picture-title{
+        transform: translate(-40%,-50%);
+        opacity: 1;
+    }
+
+    /* ------------------------------------------------------------------ */
+
+
+
+    .product__detail{
+        width: 45%;
+        margin-bottom: 30px;
+    }
+
+    .product__detail--price{
+        font-size: 3.2rem;
+        font-weight:100;
+        text-align: center;
+    }
+    .product__detail--price span{
+        font-size: 80%;
+    }
+    .product__detail ul li{    
+        font-size: 1.4rem;
+        font-weight: 100;
+
+        padding-left: 27px;
+        margin-bottom: 10px;
+    }
+    .product__detail--icon{
+        font-size: 1.5rem;
+    }
+    .product__detail--btn{
+        width: 220px;
+        margin:20px 0px 0px 50px;
+    }
+
+    /* ---------------------------Sponsor--------------------------- */
+   
+    .sponsor__showcase li{        
+        text-align: center;
+        width: 30%;
+
+        margin-left: 13px;
+    }
+
+    /* ------------------------------------------------------------------ */
+        /* .contact__content{
+            display: inline-flex;
+        }
+        .contact__info{
+            flex: 1;
+        }
+        .contact__form{
+            flex: 1;
+            display: inline-block;
+            padding:10px;
+            width: 100%;
+            position: relative;
+            top: 500%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        } */
+
+    /* ---------------------------Contact--------------------------- */
+    .contact__form{
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+    .contact__form--btn{
+        margin-top: 30px;
+        margin-left: 95px ;
+    }
+     /* ------------------------------------------------------------------ */
+}

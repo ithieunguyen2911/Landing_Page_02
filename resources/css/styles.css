@@ -3,6 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+    /* howto_css_smooth_scroll */
+    /* https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1 */
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -10,6 +15,8 @@ body{
     color: white;
 
     background-color: rgba(85, 119, 161,0.9);
+    /* code ẩn thanh scroll bar bên dưới trình duyệt web. */
+    overflow-x: hidden;
 
     /* text-rendering: optimizeLegibility; */
 }
@@ -53,7 +60,7 @@ h3{
     font-size: 1.3rem;
     font-weight: 900;
 
-    width: 220px;
+    width: 200px;
 
     padding:15px;
     margin-right: 25px;
@@ -84,6 +91,19 @@ section{
     display: flex;
     justify-content: space-between;
 }
+
+.sticky{
+    width: 100%;
+    margin-bottom: 100px;
+
+    box-shadow: 0px 1px 1px 1px rgba(47, 68, 94,0.5);
+
+    background-color: rgb(51, 107, 175);
+    position: fixed;
+    z-index: 1;
+
+    
+}
 /* .col{
     margin:0px !important;
 } */
@@ -111,6 +131,10 @@ section{
 
     transition: border-bottom 0.2s;
 }
+.top-nav__menu li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
 
 .top-nav__menu li:hover,
 .top-nav__menu li:active{
@@ -135,7 +159,9 @@ section{
 }
 .slogan__heading{
     text-transform: uppercase;
-    font-size: 5rem;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
     line-height: 180%;
 
 
@@ -157,7 +183,7 @@ section{
     position: absolute ;
     top:50%;
     left: 50%;
-    transform: translate(-50%,350%);
+    transform: translate(-50%,300%);
 }
 /* ------------------------------------------------------------------ */
 
@@ -176,6 +202,7 @@ section{
     margin: 15px auto;
     margin-bottom: 50px;
 }
+
 .about__picture img{
     /* margin: 0 auto; */
     position: relative;
@@ -253,7 +280,7 @@ section{
     color: rgb(102, 252, 241);
 }
 .product__detail--btn{
-    margin:20px 0px 0px 38px;
+    margin:20px 0px 0px 46px;
     
     box-shadow: 5px 4px 3px 2px rgb(116, 117, 117);
 }
@@ -351,12 +378,10 @@ figcaption{
     height: auto;
     
 }
-.contact__content{
-    margin:0px 50px;
-    display: flex;
-}
+
 .contact__info{
     font-size: 1.2rem;
+    padding: 0px 0px 0px 30px;
 }
 .contact__info--text{
 
@@ -404,8 +429,9 @@ figcaption{
 .contact__form{
     border-radius: 10px;
     padding: 50px;
-    width: 600px;
+    width: 65%;
     background-color: rgba(38, 39, 39, 0.7);
+    
     position: relative;
     top: 50%;
     left: 50%;
@@ -433,22 +459,9 @@ figcaption{
     border-radius: 10px;
     box-shadow:2px 2px 5px 1px wheat;
 }
-textarea{
-    background-color: rgba(255, 255, 255,0.2);
-    padding: 15px 0px;
-    margin-top: 25px;
-    width: 370px;
 
-    color:wheat;
-    font-size: 1.2rem;
-    padding-left: 10px;
-
-    border: wheat solid 2px;
-    border-radius: 10px;
-    box-shadow:2px 2px 5px 1px wheat;
-}
 .contact__form--btn{
-    margin-left: 135px ;
+    margin-left: 165px ;
     border: rgb(43, 43, 43) 1px solid;
     box-shadow:2px 2px 5px 1px rgb(80, 80, 80);
 }

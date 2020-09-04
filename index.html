@@ -12,24 +12,26 @@
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="vendors/css/grid.css"> -->
     <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+    
 
     <title>Landing Page 02</title>
 </head>
 
 <body>
     <header>
-        <nav class="top-nav">
-            <div class="container">
+        <nav class="top-nav sticky ">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-3 col-xl-4 col-lg-4">
                         <a href="#"><img class="top-nav__logo" src="resources/img/logo.png" alt="Logo"></a>
                     </div>
-                    <div class="col">
+                    <div class="col-md-9 col-xl-8 col-lg-8">
                         <ul class="top-nav__menu">
-                            <li>How Clients Think</li>
-                            <li>About</li>
-                            <li>Products</li>
-                            <li>Contact</li>
+                            <li><a href="#testimonial">How Clients Think</a> </li>
+                            <li><a href="#about">About</a> </li>
+                            <li><a href="#product">Products</a> </li>
+                            <li><a href="#contact">Contact</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -53,7 +55,7 @@
     </div>
     <div class="clearfix"></div>
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="row">
             <h2>About Us</h2>
 
@@ -63,31 +65,31 @@
                 so much money for being good at English, we're here to help you</p>
         </div>
         <div class="row container-fluid">
-            <div class="col-xl-3 about__picture">
+            <div class="col-md-6 col-lg-3 col-xl-3 about__picture">
                 <img src="resources/img/activities1.jpeg" alt="activities1">
                 <p class="about__picture-title">Team Working</p>
             </div>
-            <div class="col-xl-3 about__picture">
+            <div class="col-md-6 col-lg-3 col-xl-3 about__picture">
                 <img src="resources/img/activities2.jpeg" alt="activities2">
                 <p class="about__picture-title">Funny Class</p>
             </div>
-            <div class="col-xl-3 about__picture">
+            <div class="col-md-6 col-lg-3 col-xl-3 about__picture">
                 <img src="resources/img/activities3.jpeg" alt="activities3">
                 <p class="about__picture-title">Be Confident</p>
             </div>
-            <div class="col-xl-3 about__picture">
+            <div class="col-md-6 col-lg-3 col-xl-3 about__picture">
                 <img src="resources/img/activities4.jpeg" alt="activities4">
                 <p class="about__picture-title">All Out Friends</p>
             </div>
         </div>
     </section>
     <!-- Product Section -->
-    <section class="product container-fluid">
+    <section class="product container-fluid" id="product">
         <div class="row">
             <h2>Products</h2>
         </div>
         <div class="row">
-            <div class="col-xl-4">
+            <div class="col-lg-4 col-xl-4">
                 <div class="product__detail">
                     <h3>PRONUNCIATION CLASS</h3>
                     <p class="product__detail--price">19$<span>/month</span></p>
@@ -98,7 +100,7 @@
                     <a href="#" class="product__detail--btn btn"> Join Us</a>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-lg-4 col-xl-4">
                 <div class="product__detail">
                     <h3>SPEAKING CLASS</h3>
                     <p class="product__detail--price">25$<span>/month</span></p>
@@ -109,7 +111,7 @@
                     <a href="#" class="product__detail--btn btn"> Join Us</a>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-lg-4 col-xl-4">
                 <div class="product__detail">
                     <h3>LISTENING CLASS</h3>
                     <p class="product__detail--price">25$<span>/month</span></p>
@@ -123,7 +125,7 @@
         </div>
     </section>
     <!-- Testimonials Section -->
-    <section class="testimonial container-fluid">
+    <section class="testimonial container-fluid" id="testimonial">
         <div class="row">
             <h2>Testimonials</h2>
         </div>
@@ -167,7 +169,7 @@
         </div>
     </section>
     <!-- Sponsor Section -->
-    <section class="sponsor">
+    <section class="sponsor" id="sponsor">
         <div class="row">
             <h2>Sponsor</h2>
         </div>
@@ -220,10 +222,9 @@
         </div>
     </section>
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact container-fluid" id="contact">
         <div class="row ">
-            <div class="contact__content container-fluid">
-                <div class="col-lg-4">
+                <div class="col-md-12 col-lg-4 col-xl-4 d-inline-block">
                     <div class="contact__info">
                         <div class="row">
                             <ul class="contact__info--text">
@@ -243,7 +244,8 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-8">
+                
+                <div class="col-md-12 col-lg-8 col-xl-8 d-inline-block">
                     <form action="" class="contact__form">
                         <label for="" > Name </label> <input type="text" class="contact__form--input" placeholder="Nguyễn Hữu Hiệu"> <br>
                         <label for=""> Email </label> <input type="email" class="contact__form--input" placeholder="usahieunguyen2018@gmail.com"> <br>
@@ -251,7 +253,6 @@
                         <a href="#" class="contact__form--btn btn " target="_blank"> Send It</a>
                     </form>
                 </div>
-            </div>
         </div>
     </section>
     <div class="clearfix"></div>
@@ -260,5 +261,9 @@
         <p>Copyright &copy; 2018 by SELFTAUGHT & &copy; 2020 by HIEUNGUYEN</p>
     </footer>
 </body>
-
+<script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+</script>
 </html>
